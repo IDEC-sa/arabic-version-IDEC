@@ -3,6 +3,9 @@
    * Copyright 2011-2023 The Bootstrap Authors
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
+.mybox1 {
+display: none;
+}
 :root,
 [data-bs-theme="light"] {
   --bs-blue: #0d6efd;
@@ -11579,10 +11582,6 @@ svg {
   fill: currentColor;
 }
 
-.arrow-reverse {
-  transform: rotate(180deg);
-}
-
 .arrow-down {
   transform: rotate(90deg);
 }
@@ -11939,7 +11938,7 @@ svg {
   content: none;
 }
 
-.swiper-custom-progress .service-swiper-pagination-wrapper, .swiper-custom-progress .testimonial-swiper-pagination-wrapper, .swiper-custom-progress .shop-swiper-pagination-wrapper, .swiper-custom-progress .blog-swiper-pagination-wrapper, .swiper-custom-progress .project-swiper-pagination-wrapper {
+.swiper-custom-progress .service-swiper-pagination-wrapper, .swiper-custom-progress .testimonial-swiper-pagination-wrapper, .swiper-custom-progress .shop-swiper-pagination-wrapper, .swiper-custom-progress .brand-swiper-pagination-wrapper, .swiper-custom-progress .blog-swiper-pagination-wrapper, .swiper-custom-progress .project-swiper-pagination-wrapper {
   margin-top: var(--bs-progress-pagination-wrapper-margin);
   position: relative;
 }
@@ -11959,17 +11958,17 @@ svg {
   }
 }
 
-.swiper-custom-progress .service-swiper-pagination, .swiper-custom-progress .testimonial-swiper-pagination, .swiper-custom-progress .shop-swiper-pagination, .swiper-custom-progress .blog-swiper-pagination, .swiper-custom-progress .project-swiper-pagination {
-  width: var(--bs-swiper-pagination-width);
+.swiper-custom-progress .service-swiper-pagination, .swiper-custom-progress .testimonial-swiper-pagination, .swiper-custom-progress .shop-swiper-pagination, .swiper-custom-progress .blog-swiper-pagination, .swiper-custom-progress .project-swiper-pagination , .swiper-custom-progress .sample-product-swiper-pagination, .swiper-custom-progress  .brand-swiper-pagination{
+  width: var(--bs-swiper-pagination-width); 
 }
 
-.swiper-custom-progress .service-swiper-pagination.swiper-pagination-progressbar, .swiper-custom-progress .testimonial-swiper-pagination.swiper-pagination-progressbar, .swiper-custom-progress .shop-swiper-pagination.swiper-pagination-progressbar, .swiper-custom-progress .blog-swiper-pagination.swiper-pagination-progressbar, .swiper-custom-progress .project-swiper-pagination.swiper-pagination-progressbar {
+.swiper-custom-progress .service-swiper-pagination.swiper-pagination-progressbar, .swiper-custom-progress .testimonial-swiper-pagination.swiper-pagination-progressbar, .swiper-custom-progress .shop-swiper-pagination.swiper-pagination-progressbar, .swiper-custom-progress .blog-swiper-pagination.swiper-pagination-progressbar, .swiper-custom-progress .project-swiper-pagination.swiper-pagination-progressbar, .sample-product-swiper-pagination.swiper-pagination-progressbar, .brand-swiper-pagination.swiper-pagination-progressbar{
   background: var(--bs-swiper-pagination-line-color);
   border-radius: 10px;
   height: 2px;
 }
 
-.swiper-custom-progress .service-swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill, .swiper-custom-progress .testimonial-swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill, .swiper-custom-progress .shop-swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill, .swiper-custom-progress .blog-swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill, .swiper-custom-progress .project-swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+.swiper-custom-progress .service-swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill, .swiper-custom-progress .testimonial-swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill, .swiper-custom-progress .shop-swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill, .swiper-custom-progress .blog-swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill, .swiper-custom-progress .project-swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill, .sample-product-swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill, .brand-swiper-pagination.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
   height: 5px;
   top: -2px;
 }
@@ -25494,5 +25493,11 @@ textarea {
   .d-print-none {
     display: none;
   }
+}
+.reversed{
+
+  transform: rotate(180deg);
+
+
 }
 /*# sourceMappingURL=style.css.map */

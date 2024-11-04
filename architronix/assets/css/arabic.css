@@ -1,6 +1,11 @@
+@font-face {
+    font-family: 'arfont'; /*a name to be used later*/
+    src: url('../fonts/arfonty.ttf'); /*URL to font*/
+}
 .page.arabic{
     direction: rtl;
     text-align: right;
+    font-family: 'arfont';
 }
 .page.arabic .dropdown-menu{
     text-align: right;
@@ -72,3 +77,48 @@
 /* .page.arabic .row.g-0{
     flex-direction: row-reverse;
 } */
+
+.page.arabic #projectSlider *:not(.flex-column){
+    flex-direction: row-reverse;
+}
+
+
+/* .page.arabic .swiper-button-progress{
+    flex-direction: row-reverse;
+} */
+
+.page.arabic .blog-title a {
+    padding-bottom: 0px;
+}
+.page.arabic .project-details-wrapper.project-details-style{
+    left: 0%;
+    right: auto;
+}
+.page.arabic .project-details-list{
+    padding-right: 0;
+}
+
+.page.arabic .project-gallery-button-prev{
+    right: 0;
+    left: auto;
+}
+.page.arabic .project-gallery-button-next{
+    left: 0;
+    right: auto;
+}
+
+.page.arabic .arrow{
+    transform: none;
+}
+.arrow{
+    transform: rotate(180deg);
+}
+
+.page.arabic .credits-wrapper a{
+    background-position: right 100%;
+}
+
+.page.arabic .arrow-reverse {
+    transform: rotate(180deg);
+  }
+  

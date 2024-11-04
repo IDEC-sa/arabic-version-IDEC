@@ -92,6 +92,60 @@
 
 
   // =======Swiper .shop-2-swiper========>>>>>
+  if ($('.sample-product-swiper').length > 0) {
+    new Swiper(".sample-product-swiper", {
+      loop: true,      
+      spaceBetween: 20,
+      slidesPerGroup: 1,
+      breakpoints: {
+        380: {
+          slidesPerView: 1,
+        },
+        600: {
+          slidesPerView: 2,
+        },
+        1000: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+      },
+      pagination: {
+        el: ".sample-product-swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".shop-swiper-pagination-wrapper .progress-button-next",
+        prevEl: ".shop-swiper-pagination-wrapper .progress-button-prev",
+      },
+    });
+  }
+  if ($('.brand-swiper').length > 0) {
+    new Swiper(".brand-swiper", {
+      loop: true,      
+      spaceBetween: 20,
+      slidesPerGroup: 1,
+      breakpoints: {
+        380: {
+          slidesPerView: 1,
+        },
+        600: {
+          slidesPerView: 2,
+        },
+        1000: {
+          slidesPerView: 5,
+          spaceBetween: 30,
+        },
+      },
+      pagination: {
+        el: ".brand-swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".brand-swiper-pagination-wrapper .progress-button-next",
+        prevEl: ".brand-swiper-pagination-wrapper .progress-button-prev",
+      },
+    });
+  }
   if ($('.shop-2-swiper').length > 0) {
     new Swiper(".shop-2-swiper", {
       loop: true,      
@@ -318,6 +372,7 @@
         swiper: swiper,
       },
     });
+    // swiper.changeLanguageDirection('ltr')
   }
   // =======Swiper .gallery-swiper========>>>>>
 
